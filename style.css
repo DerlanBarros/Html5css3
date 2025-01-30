@@ -5,6 +5,33 @@
 
 */
 
-body{
-    background-color: #ff0000;
+/* Smartphone Portrait 540px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px){
+    body{
+        background-color: #0ff;
+    }
+}
+
+/* Tablet Portrait 768px      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+    body{
+        background-color: darkorchid;
+    }
+}
+
+/* tablet Landscape 992px     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    body{
+        background-color: darkorange;
+    }
+}
+
+/* PC 1200px                  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    body{
+        background-color: darkgreen;
+    }
+    
 }
