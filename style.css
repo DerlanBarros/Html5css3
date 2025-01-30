@@ -30,17 +30,24 @@ body {
 }
 
 
+/* Topo do Site */
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
 /* Smartphone Portrait 540px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
     body {
-        background-color: #0ff;
+        background-color: rgb(184, 225, 225);
     }
     /* Layout */
     .Container{
         max-width: 540px;
-        background-color: #7f0;
+        background-color: #dcdcdc;
     }
 }
 
