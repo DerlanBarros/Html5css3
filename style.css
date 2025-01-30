@@ -5,33 +5,74 @@
 
 */
 
+/* Importação (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Layout */
+.Container{
+    margin: 0 auto;
+}
+
+
 /* Smartphone Portrait 540px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px){
-    body{
+@media (min-width: 576px) {
+    body {
         background-color: #0ff;
+    }
+    /* Layout */
+    .Container{
+        max-width: 540px;
+        background-color: #7f0;
     }
 }
 
 /* Tablet Portrait 768px      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    body{
+    body {
         background-color: darkorchid;
+    }
+    /* Layout */
+    .Container{
+        max-width: 720px;
     }
 }
 
 /* tablet Landscape 992px     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    body{
+    body {
         background-color: darkorange;
+    }
+    /* Layout */
+    .Container{
+        max-width: 960px;
     }
 }
 
 /* PC 1200px                  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    body{
+    body {
         background-color: darkgreen;
     }
-    
+    /* Layout */
+    .Container{
+        max-width: 1140px;
+    }
 }
