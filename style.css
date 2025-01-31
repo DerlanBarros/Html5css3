@@ -34,6 +34,16 @@ body {
     justify-content: space-between;
 }
 
+.Botao{
+    font-size: 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(222, 74, 28);
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+}
 
 /* Topo do Site */
 #topo {
@@ -88,12 +98,38 @@ nav ul li a {
     color: #fff;
 }
 
+/* Destaque */
+main {
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h2 {
+    font-size: 1em;
+    margin: 20px 0 50px 0;
+}
+
 /* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
     /* Layout */
     .Container {
         max-width: 540px;
+    }
+
+    /* Destaque */
+    main h1, main h2{
+        text-shadow: #000 2px 2px 5px;
     }
 }
 
@@ -104,6 +140,19 @@ nav ul li a {
     .Container {
         max-width: 720px;
     }
+
+    /* Destaque */
+    main{
+        height: 45vh;
+    }
+
+    main h1{
+        font-size: 5.5em;
+    }
+
+    main h2{
+        font-size: 2em;
+    }
 }
 
 /* tablet Landscape 992px     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -112,6 +161,11 @@ nav ul li a {
     /* Layout */
     .Container {
         max-width: 960px;
+    }
+
+    /* Destaque */
+    main{
+        height: 70vh;
     }
 }
 
@@ -154,6 +208,6 @@ nav ul li a {
     }
 
     nav ul li a:hover {
-        color: rgb(213, 86, 7);
+        color: rgb(230, 69, 20);
     }
 }
