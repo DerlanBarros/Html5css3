@@ -17,21 +17,26 @@
 }
 
 body {
-  font-family: "Open Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
 
 /* Layout */
-.Container{
+.Container {
     margin: 0 auto;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 
 /* Topo do Site */
-#topo{
+#topo {
     position: fixed;
     right: 10px;
     bottom: 10px;
@@ -39,47 +44,116 @@ body {
 
 /* Smartphone Portrait 540px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* Cabeçalho */
+header {
+    height: 60px;
+}
+
+#logo img {
+    width: 150px;
+    margin-top: 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #343538;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-    body {
-        background-color: rgb(184, 225, 225);
-    }
+
     /* Layout */
-    .Container{
+    .Container {
         max-width: 540px;
-        background-color: #dcdcdc;
     }
 }
 
 /* Tablet Portrait 768px      >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
-    body {
-        background-color: darkorchid;
-    }
+
     /* Layout */
-    .Container{
+    .Container {
         max-width: 720px;
     }
 }
 
 /* tablet Landscape 992px     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    body {
-        background-color: darkorange;
-    }
+
     /* Layout */
-    .Container{
+    .Container {
         max-width: 960px;
     }
 }
 
 /* PC 1200px                  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
-    body {
-        background-color: darkgreen;
-    }
+
     /* Layout */
-    .Container{
+    .Container {
         max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 120px;
+    }
+
+    #logo img {
+        width: 189px;
+        margin-top: 50px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        float: left;
+        border: none;
+    }
+
+    nav ul li a {
+        color: #343538;
+    }
+
+    nav ul li a:hover {
+        color: rgb(213, 86, 7);
     }
 }
