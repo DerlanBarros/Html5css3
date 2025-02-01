@@ -34,11 +34,16 @@ body {
     justify-content: space-between;
 }
 
+.Flex2 {
+    display: flex;
+    align-items: center;
+}
+
 .Botao{
     font-size: 1.3em;
     font-weight: 700;
     text-decoration: none;
-    background-color: rgb(222, 74, 28);
+    background-color: #E44D26;
     color: #fff;
     padding: 10px 40px;
     border-radius: 50px;
@@ -117,6 +122,34 @@ main h1 {
 main h2 {
     font-size: 1em;
     margin: 20px 0 50px 0;
+}
+
+/* Sobre */
+#sobre {
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+}
+
+#destaqueSobre{
+    display: none;
+}
+
+#textoSobre {
+    color: #fff;
+    padding: 0 10px;
+}
+
+#textoSobre h2 {
+    margin-bottom: 10px;
+}
+
+.TopicosSobre{
+    margin-top: 20px;
+}
+
+.TopicosSobre img {
+    margin-right: 10px;
 }
 
 /* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
