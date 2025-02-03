@@ -39,7 +39,12 @@ body {
     align-items: center;
 }
 
-.Botao{
+.Flex3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.Botao {
     font-size: 1.3em;
     font-weight: 700;
     text-decoration: none;
@@ -55,6 +60,25 @@ body {
     position: fixed;
     right: 10px;
     bottom: 10px;
+}
+
+/* One Page */
+#onepage {
+    padding: 50px 10px;
+}
+
+#onepage h2 {
+    margin-bottom: 10px;
+}
+
+#onepage p {
+    margin-bottom: 25px;
+}
+
+#video iframe {
+    width: 340px;
+    height: 191px;
+    border: 0;
 }
 
 /* Smartphone Portrait 540px  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -75,7 +99,10 @@ header {
 
 label {
     font-size: 3em;
-    padding-right: 15px;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 nav ul {
@@ -108,6 +135,7 @@ main {
     height: 75vh;
     background: url(img/banner.jpg);
     background-size: cover;
+    background-position: center;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -129,9 +157,10 @@ main h2 {
     padding: 50px 0px;
     background: url(img/background.png);
     background-size: cover;
+    background-position: center;
 }
 
-#destaqueSobre{
+#destaqueSobre {
     display: none;
 }
 
@@ -144,12 +173,41 @@ main h2 {
     margin-bottom: 10px;
 }
 
-.TopicosSobre{
+.TopicosSobre {
     margin-top: 20px;
 }
 
 .TopicosSobre img {
     margin-right: 10px;
+}
+
+/* Wireframe */
+#wireframe {
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#textoWire {
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoWire h2 {
+    margin-bottom: 10px;
+}
+
+#textoWire p {
+    margin-bottom: 40px;
+}
+
+#textoWire span {
+    display: none;
+}
+
+#qrcode {
+    display: none;
 }
 
 /* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -161,8 +219,15 @@ main h2 {
     }
 
     /* Destaque */
-    main h1, main h2{
+    main h1,
+    main h2 {
         text-shadow: #000 2px 2px 5px;
+    }
+
+    /* One Page */
+    #video iframe {
+        width: 560px;
+        height: 315px;
     }
 }
 
@@ -175,15 +240,15 @@ main h2 {
     }
 
     /* Destaque */
-    main{
+    main {
         height: 45vh;
     }
 
-    main h1{
+    main h1 {
         font-size: 5.5em;
     }
 
-    main h2{
+    main h2 {
         font-size: 2em;
     }
 }
@@ -197,7 +262,7 @@ main h2 {
     }
 
     /* Destaque */
-    main{
+    main {
         height: 70vh;
     }
 }
@@ -242,5 +307,43 @@ main h2 {
 
     nav ul li a:hover {
         color: rgb(230, 69, 20);
+    }
+
+    /* Sobre */
+    #sobre {
+        background-attachment: fixed;
+    }
+
+    #destaqueSobre {
+        display: inline;
+    }
+
+    #destaqueSobre img {
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+
+    /* One Page */
+    .Flex3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Wireframe */
+    #wireframe {
+        background-attachment: fixed;
+    }
+
+    #wireframe span {
+        display: inline;
+    }
+
+    #qrcode {
+        display: inline;
+    }
+
+    #qrcode img {
+        width: 225px;
+        height: 225px;
     }
 }
