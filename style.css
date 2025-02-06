@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -44,6 +48,22 @@ body {
     flex-direction: column;
 }
 
+.Flex4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Flex5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Flex6 {
+    display: flex;
+    justify-content: space-around;
+}
+
 .Botao {
     font-size: 1.3em;
     font-weight: 700;
@@ -53,6 +73,36 @@ body {
     padding: 10px 40px;
     border-radius: 50px;
     border: 2px solid #fff;
+}
+
+/* Cartões */
+.Card {
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background-color: #e8e8e8;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 25px 25px 0 0;
+}
+
+.Card h3 {
+    margin-top: 15px;
+}
+
+.Card p {
+    text-align: left;
+    color: #434343;
+    padding: 10px 30px 50px 30px;
+}
+
+.Card a {
+    padding: 10px 100px;
+    border: none;
 }
 
 /* Topo do Site */
@@ -107,12 +157,12 @@ label {
 
 nav ul {
     list-style: none;
-    background-color: #343538;
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100vh;
     position: fixed;
     top: 60px;
-    right: -100%;
-    width: 100%;
+    right: -65%;
+    width: 65%;
     transition: all 0.5s;
 }
 
@@ -123,6 +173,7 @@ nav ul {
 nav ul li {
     padding: 20px;
     border-bottom: 1px solid #fff;
+    text-align: right;
 }
 
 nav ul li a {
@@ -210,6 +261,65 @@ main h2 {
     display: none;
 }
 
+/* Conteúdo */
+#conteudo {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#conteudo h2 {
+    margin-bottom: 25px;
+}
+
+#todos {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#todos a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+/* Footer */
+address {
+    padding: 35px 10px 50px 10px;
+    background: url(img/background2.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+address img {
+    padding-top: 15px;
+}
+
+#iconeLocal {
+    display: none;
+}
+
+#googlemaps {
+    display: none;
+}
+
+footer {
+    padding: 50px;
+    background-color: #343538;
+    color: #fff;
+    text-align: center;
+}
+
+#social {
+    margin-bottom: 15px;
+}
+
 /* Smartphone Landscape 576px >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
@@ -228,6 +338,17 @@ main h2 {
     #video iframe {
         width: 560px;
         height: 315px;
+    }
+
+    /* Footer */
+    .Flex5 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #social {
+        margin: 0;
     }
 }
 
@@ -291,6 +412,7 @@ main h2 {
 
     nav ul {
         position: static;
+        width: 100%;
         height: auto;
         background-color: transparent;
         margin-top: 50px;
@@ -345,5 +467,22 @@ main h2 {
     #qrcode img {
         width: 225px;
         height: 225px;
+    }
+
+    /* Rodapé */
+    #iconeLocal {
+        display: inline;
+    }
+
+    #iconeMapa {
+        display: none;
+    }
+
+    #googlemaps {
+        display: inline;
+    }
+
+    .Flex6 {
+        flex-direction: row-reverse;
     }
 }
